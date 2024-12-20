@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="02"
+                 name="02 - Modules"
+                 start-page="02-modules.md">
+
+    <toc-element topic="02-modules.md"/>
+    <toc-element topic="Finance-Management.md"/>
+    <toc-element topic="Inventory-Management.md"/>
+    <toc-element topic="Notifications.md"/>
+    <toc-element topic="People-Management.md"/>
+</instance-profile>
