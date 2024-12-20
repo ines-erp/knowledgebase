@@ -7,6 +7,7 @@
     <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="adding brand module and description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writerside/0-b.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/0-b.tree" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="bru-documentation-update" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,12 +28,7 @@
     &quot;assignee&quot;: &quot;wesAlves&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:ines-erp/knowledgebase.git&quot;,
-    &quot;accountId&quot;: &quot;68581c96-e931-4fdd-bcee-0d5ba35d9f66&quot;
-  }
-}</component>
+
   <component name="InstanceColorv3">
     <option name="map">
       <map>
