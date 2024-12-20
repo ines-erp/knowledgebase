@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="6dfa5a28">
+        <description>Created after removal of "About General" from 01 - Journal</description>
+        <accepts>starter-topic.html</accepts>
+    </rule>
+    <rule id="5f56000d">
+        <description><![CDATA[Created after removal of "<Empty-MD-Topic.md>" from 02 - Modules]]></description>
+        <accepts>Empty-MD-Topic.html</accepts>
+    </rule>
+</rules>
