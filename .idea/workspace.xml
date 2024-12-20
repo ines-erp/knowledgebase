@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding some trash">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Finance-Management.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Finance-Management.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Inventory-Management.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Inventory-Management.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Notifications.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Notifications.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,18 +22,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "wesAlves"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wesAlves&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:ines-erp/knowledgebase.git",
-    "accountId": "68581c96-e931-4fdd-bcee-0d5ba35d9f66"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:ines-erp/knowledgebase.git&quot;,
+    &quot;accountId&quot;: &quot;68581c96-e931-4fdd-bcee-0d5ba35d9f66&quot;
   }
-}]]></component>
+}</component>
   <component name="InstanceColorv3">
     <option name="map">
       <map>
@@ -269,10 +271,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "starting__wes__docs",
+    "git-widget-placeholder": "bru-documentation-update",
     "last_opened_file_path": "/home/wes/Documents/01_Clientes/11_Ines_erp/knowledgebase",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "writerside.last.selected.productknowledgebase": "01"
+    "writerside.last.selected.productknowledgebase": "02"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
