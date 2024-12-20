@@ -19,7 +19,7 @@
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
-    <build-profile instance="0-b">
+    <build-profile instance="04">
         <variables>
             <noindex-content>false</noindex-content>
         </variables>
