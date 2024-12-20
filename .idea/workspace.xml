@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding DrawIO nameing rules">
-      <change beforePath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" afterDir="false" />
+    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding some trash">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +20,102 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "wesAlves"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:ines-erp/knowledgebase.git",
+    "accountId": "68581c96-e931-4fdd-bcee-0d5ba35d9f66"
+  }
+}]]></component>
   <component name="InstanceColorv3">
     <option name="map">
       <map>
+        <entry key="$PROJECT_DIR$/Writerside/01.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="6" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="173" />
+                  <option name="darkBlue" value="173" />
+                  <option name="darkGreen" value="84" />
+                  <option name="darkRed" value="120" />
+                  <option name="green" value="84" />
+                  <option name="red" value="120" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="230" />
+                  <option name="darkBlue" value="230" />
+                  <option name="darkGreen" value="122" />
+                  <option name="darkRed" value="137" />
+                  <option name="green" value="122" />
+                  <option name="red" value="137" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Writerside/02.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="7" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="173" />
+                  <option name="darkBlue" value="173" />
+                  <option name="darkGreen" value="188" />
+                  <option name="darkRed" value="45" />
+                  <option name="green" value="188" />
+                  <option name="red" value="45" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="164" />
+                  <option name="darkBlue" value="164" />
+                  <option name="darkGreen" value="214" />
+                  <option name="darkRed" value="53" />
+                  <option name="green" value="214" />
+                  <option name="red" value="53" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Writerside/03.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="8" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="185" />
+                  <option name="darkBlue" value="185" />
+                  <option name="darkGreen" value="64" />
+                  <option name="darkRed" value="200" />
+                  <option name="green" value="64" />
+                  <option name="red" value="200" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="174" />
+                  <option name="darkBlue" value="174" />
+                  <option name="darkGreen" value="116" />
+                  <option name="darkRed" value="224" />
+                  <option name="green" value="116" />
+                  <option name="red" value="224" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Writerside/i.tree">
           <value>
             <ColorState>
@@ -178,6 +271,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "starting__wes__docs",
     "last_opened_file_path": "/home/wes/Documents/01_Clientes/11_Ines_erp/knowledgebase",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "writerside.last.selected.productknowledgebase": "01"
   }
 }]]></component>
@@ -190,6 +284,7 @@
     <MESSAGE value="Rename writerside2 to writerside" />
     <MESSAGE value="Adding DrawIO dir" />
     <MESSAGE value="Adding DrawIO nameing rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding DrawIO nameing rules" />
+    <MESSAGE value="Adding some trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding some trash" />
   </component>
 </project>
