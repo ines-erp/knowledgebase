@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Updating version number" />
+    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding DrawIO nameing rules">
+      <change beforePath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,6 +186,10 @@
     <MESSAGE value="starting" />
     <MESSAGE value="Adding some code insights" />
     <MESSAGE value="Updating version number" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating version number" />
+    <MESSAGE value="Adding first diagram" />
+    <MESSAGE value="Rename writerside2 to writerside" />
+    <MESSAGE value="Adding DrawIO dir" />
+    <MESSAGE value="Adding DrawIO nameing rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding DrawIO nameing rules" />
   </component>
 </project>
