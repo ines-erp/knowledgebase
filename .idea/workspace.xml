@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding DrawIO nameing rules">
+    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="adding brand module and description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/0-b.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/0-b.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,14 +16,53 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="bru-documentation-update" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wesAlves&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:ines-erp/knowledgebase.git&quot;,
+    &quot;accountId&quot;: &quot;68581c96-e931-4fdd-bcee-0d5ba35d9f66&quot;
+  }
+}</component>
   <component name="InstanceColorv3">
     <option name="map">
       <map>
+        <entry key="$PROJECT_DIR$/Writerside/0-b.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="9" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="232" />
+                  <option name="darkBlue" value="232" />
+                  <option name="darkGreen" value="117" />
+                  <option name="darkRed" value="123" />
+                  <option name="green" value="117" />
+                  <option name="red" value="123" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="235" />
+                  <option name="darkBlue" value="235" />
+                  <option name="darkGreen" value="153" />
+                  <option name="darkRed" value="125" />
+                  <option name="green" value="153" />
+                  <option name="red" value="125" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Writerside/01.tree">
           <value>
             <ColorState>
@@ -258,9 +297,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "bru-documentation-update",
     "last_opened_file_path": "/home/wes/Documents/01_Clientes/11_Ines_erp/knowledgebase",
-    "writerside.last.selected.productknowledgebase": "01"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "writerside.last.selected.productknowledgebase": "0-b"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -272,6 +312,10 @@
     <MESSAGE value="Rename writerside2 to writerside" />
     <MESSAGE value="Adding DrawIO dir" />
     <MESSAGE value="Adding DrawIO nameing rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding DrawIO nameing rules" />
+    <MESSAGE value="Adding some trash" />
+    <MESSAGE value="updating existing modules to iterate with mine translated ones" />
+    <MESSAGE value="updating resume" />
+    <MESSAGE value="adding brand module and description" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding brand module and description" />
   </component>
 </project>
