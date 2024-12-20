@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding some trash">
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Finance-Management.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Finance-Management.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Inventory-Management.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Inventory-Management.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Notifications.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Notifications.md" afterDir="false" />
+    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="updating existing modules to iterate with mine translated ones">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/02.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/02.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,6 +286,7 @@
     <MESSAGE value="Adding DrawIO dir" />
     <MESSAGE value="Adding DrawIO nameing rules" />
     <MESSAGE value="Adding some trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some trash" />
+    <MESSAGE value="updating existing modules to iterate with mine translated ones" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating existing modules to iterate with mine translated ones" />
   </component>
 </project>
