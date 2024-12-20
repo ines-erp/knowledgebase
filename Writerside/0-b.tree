@@ -7,4 +7,7 @@
                  start-page="04-brand.md">
 
     <toc-element topic="04-brand.md"/>
+    <toc-element topic="Brand-definitions.md"/>
+    <toc-element topic="Target-Audience.md"/>
+    <toc-element topic="Personas.md"/>
 </instance-profile>

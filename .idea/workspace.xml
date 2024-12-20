@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="updating resume">
+    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="adding brand module and description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/writerside.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/writerside.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/0-b.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/0-b.tree" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,6 +315,7 @@
     <MESSAGE value="Adding some trash" />
     <MESSAGE value="updating existing modules to iterate with mine translated ones" />
     <MESSAGE value="updating resume" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating resume" />
+    <MESSAGE value="adding brand module and description" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding brand module and description" />
   </component>
 </project>
