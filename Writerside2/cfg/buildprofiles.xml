@@ -14,5 +14,10 @@
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
+    <build-profile instance="03">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
 
 </buildprofiles>
