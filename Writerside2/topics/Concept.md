@@ -1,4 +1,4 @@
-# 01 - Ines ERP core
+# Ines ERP core
 
 ## Description
 This is the central unity of the system, here we will manage all other modules and utilities. Attached here we will have a account management system, some tools to enable disable modules, and other basic configs that will be cross shared between all system.

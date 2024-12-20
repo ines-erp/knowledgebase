@@ -7,4 +7,5 @@
                  start-page="Concept.md">
 
     <toc-element topic="Concept.md"/>
+    <toc-element topic="Diagram-01.md"/>
 </instance-profile>

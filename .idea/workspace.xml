@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="" />
+    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Updating version number" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +129,33 @@
             </ColorState>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Writerside2/03.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="5" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="55" />
+                  <option name="darkBlue" value="55" />
+                  <option name="darkGreen" value="114" />
+                  <option name="darkRed" value="226" />
+                  <option name="green" value="114" />
+                  <option name="red" value="226" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="62" />
+                  <option name="darkBlue" value="62" />
+                  <option name="darkGreen" value="168" />
+                  <option name="darkRed" value="232" />
+                  <option name="green" value="168" />
+                  <option name="red" value="232" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -149,8 +176,14 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "starting__wes__docs",
     "last_opened_file_path": "/home/wes/Documents/01_Clientes/11_Ines_erp/knowledgebase",
-    "writerside.last.selected.productknowledgebase": "02"
+    "writerside.last.selected.productknowledgebase": "01"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="starting" />
+    <MESSAGE value="Adding some code insights" />
+    <MESSAGE value="Updating version number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating version number" />
+  </component>
 </project>
