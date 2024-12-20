@@ -7,6 +7,7 @@
                  start-page="02-modules.md">
 
     <toc-element topic="02-modules.md"/>
+    <toc-element topic="Concept.md"/>
     <toc-element topic="Finance-Management.md"/>
     <toc-element topic="Sales-Services-Management.md"/>
     <toc-element topic="Customer-Management-CRM.md"/>

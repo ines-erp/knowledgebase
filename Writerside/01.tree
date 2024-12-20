@@ -4,8 +4,8 @@
 
 <instance-profile id="01"
                  name="01 - Journal"
-                 start-page="Concept.md">
+                 start-page="Diagram-01.md">
 
-    <toc-element topic="Concept.md"/>
     <toc-element topic="Diagram-01.md"/>
+    <toc-element topic="Code-snipets.md"/>
 </instance-profile>

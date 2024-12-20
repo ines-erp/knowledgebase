@@ -2,7 +2,7 @@
 
 ## Description
 This is the central unity of the system, here we will manage all other modules and utilities. Attached here we will have a account management system, some tools to enable disable modules, and other basic configs that will be cross shared between all system.
-___
+
 ## Some ideas to make it work
 - To enable/disable modules:
     - I could try to prepare some scripts that runs a shell scripts to turn up/down some containers, those containers will talk to each other with some API (to be define the pattern), the ERP core module will provide any extra configuration that would be necessary to connect different modules.
@@ -12,7 +12,3 @@ ___
     - Maybe I could use some database_name/table_name/column_name to relate thinks. Need to research
     - Another possibility is use noSQL databases that could provide simple way to save and manage that.
 
-___
-We could make some use of meddlewares in C#
-
-DBContext is bind to one specifica database and DbSet is bind to tables
