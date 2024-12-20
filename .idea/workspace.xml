@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding some trash">
+    <list default="true" id="bce5b3bf-c7fe-4d62-aab2-001c3e09b785" name="Changes" comment="Adding DrawIO nameing rules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/DrawIO_diagrams/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,23 +16,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="bru-documentation-update" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "wesAlves"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:ines-erp/knowledgebase.git",
-    "accountId": "68581c96-e931-4fdd-bcee-0d5ba35d9f66"
-  }
-}]]></component>
   <component name="InstanceColorv3">
     <option name="map">
       <map>
@@ -269,9 +258,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "starting__wes__docs",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/wes/Documents/01_Clientes/11_Ines_erp/knowledgebase",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
     "writerside.last.selected.productknowledgebase": "01"
   }
 }]]></component>
@@ -284,7 +272,6 @@
     <MESSAGE value="Rename writerside2 to writerside" />
     <MESSAGE value="Adding DrawIO dir" />
     <MESSAGE value="Adding DrawIO nameing rules" />
-    <MESSAGE value="Adding some trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding DrawIO nameing rules" />
   </component>
 </project>
