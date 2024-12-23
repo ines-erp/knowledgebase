@@ -20,7 +20,7 @@ document {
 
 |Client|
 start
-:Do a order;
+:Do an order;
 
 |User|
 if (Has account?) is (No) then
@@ -36,14 +36,25 @@ if (Stock sufficient amount?) is (No) then
   :Notify;
 endif
 
+fork
+:Cancel;
+end
+
+fork again
+:Trigger schedule an order flow;
+end
+
+fork again
 :Create order;
+end merge
+
 :Save to DB;
 
 |User|
 :Prepare order;
 
 |Client|
-:Payment;
+:Trigger the Payment flow;
 :Receive order;
 :CRM - Post sales;
 
