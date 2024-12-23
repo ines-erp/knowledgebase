@@ -1,0 +1,35 @@
+@startuml
+<style>
+    activityDiagram {
+      BackgroundColor #33668E
+      FontColor #fff
+    }
+    arrow {
+        FontColor #33668E
+        FontName arial
+        FontSize 15
+    }
+    document {
+        BackgroundColor Transparent
+    }
+</style>
+
+|User|
+start
+:Request product availability;
+|System|
+if (Is Product available?) is (yes) then
+    if (Is amount enough?) is (yes) then
+      :Update amount;
+      :Save on data base;
+      |User|
+      :Notify success;
+      end
+      break
+      endif
+->
+endif
+:Notify Product amount;
+end
+
+@enduml
