@@ -1,0 +1,72 @@
+@startuml
+<style>
+activityDiagram {
+  BackgroundColor #33668E
+  BorderColor #33668E
+  FontColor #888
+  FontName arial
+
+  diamond {
+    BackgroundColor #ccf
+    LineColor #00FF00
+    FontColor green
+    FontName arial
+    FontSize 15
+  }
+  arrow {
+    FontColor gold
+    FontName arial
+    FontSize 15
+  }
+  partition {
+    LineColor red
+    FontColor green
+    RoundCorner 10
+    BackgroundColor PeachPuff
+  }
+  note {
+    FontColor Blue
+    LineColor Navy
+    BackgroundColor #ccf
+  }
+}
+document {
+   BackgroundColor transparent
+}
+</style>
+
+|User|
+start
+:Access the system for the first time;
+
+|System|
+:Request an user creation (that must be an Admin);
+:Provide an user creation form;
+
+|User|
+:Fill the user creation form;
+
+repeat: User creation form;
+|User|
+backward: Notify;
+repeat while (Form) is (Not valid)
+:Notify user that is something wrong;
+
+'fork
+':Cancel;
+'repeat :User creation form;
+'    :User creation form;
+'backward: jaca;
+'repeat while (form is not OK)
+'endfork
+
+
+'else (Valid)
+'|System|
+':Save to Data base;
+
+
+
+
+end
+@enduml
