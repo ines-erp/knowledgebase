@@ -1,4 +1,14 @@
 @startuml
+<style>
+activityDiagram {
+  BackgroundColor #33668E
+  FontColor #fff
+}
+
+document {
+    BackgroundColor Transparent
+}
+</style>
 
 |Client|
 start
