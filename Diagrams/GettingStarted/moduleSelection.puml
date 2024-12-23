@@ -1,0 +1,18 @@
+@startuml
+|System|
+start
+:Send List of available modules;
+
+|User|
+:Read the list of available modules;
+:Select the desired modules;
+
+|System|
+:Save on Data Base;
+:Install Dependencies;
+
+|User|
+:Go to dashboard admin;
+end
+
+@enduml
