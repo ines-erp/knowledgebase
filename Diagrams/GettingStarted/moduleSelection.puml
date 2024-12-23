@@ -1,4 +1,19 @@
 @startuml
+<style>
+    activityDiagram {
+      BackgroundColor #33668E
+      FontColor #fff
+    }
+    arrow {
+        FontColor #33668E
+        FontName arial
+        FontSize 15
+    }
+    document {
+        BackgroundColor Transparent
+    }
+</style>
+|User|
 |System|
 start
 :Send List of available modules;
