@@ -3,7 +3,7 @@
 activityDiagram {
   BackgroundColor #33668E
   BorderColor #33668E
-  FontColor #888
+  FontColor #fff
   FontName arial
 
   diamond {
@@ -17,6 +17,7 @@ activityDiagram {
     FontColor gold
     FontName arial
     FontSize 15
+
   }
   partition {
     LineColor red
@@ -50,23 +51,10 @@ repeat: User creation form;
 |User|
 backward: Notify;
 repeat while (Form) is (Not valid)
-:Notify user that is something wrong;
+|System|
+:Save to Data base;
 
-'fork
-':Cancel;
-'repeat :User creation form;
-'    :User creation form;
-'backward: jaca;
-'repeat while (form is not OK)
-'endfork
-
-
-'else (Valid)
-'|System|
-':Save to Data base;
-
-
-
-
-end
+|User|
+:Chose modules Flow;
+stop
 @enduml
