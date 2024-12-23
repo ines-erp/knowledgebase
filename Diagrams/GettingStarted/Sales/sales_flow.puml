@@ -1,0 +1,41 @@
+@startuml
+
+|Client|
+start
+:Do a order;
+
+|User|
+if (Has account?) is (No) then
+:CRM - Account creation;
+endif
+
+:Create order FORM;
+
+|System|
+:Create order;
+
+if (Stock amount?) is (insufficient) then
+  :Notify;
+endif
+
+:Create order;
+:Save to DB;
+
+|User|
+:Prepare order;
+
+|Client|
+:Payment;
+:Receive order;
+:CRM - Post sales;
+
+end
+
+
+'repeat :Stock management flow;
+'backward:Stock not OK;
+'repeat while (stock amount) is (Not OK)
+
+
+
+@enduml
