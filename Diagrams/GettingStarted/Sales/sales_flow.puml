@@ -5,6 +5,14 @@ activityDiagram {
   FontColor #fff
 }
 
+arrow {
+FontColor #33668E
+FontName arial
+FontSize 15
+
+}
+
+
 document {
     BackgroundColor Transparent
 }
@@ -24,7 +32,7 @@ endif
 |System|
 :Create order;
 
-if (Stock amount?) is (insufficient) then
+if (Stock sufficient amount?) is (No) then
   :Notify;
 endif
 
@@ -40,12 +48,5 @@ endif
 :CRM - Post sales;
 
 end
-
-
-'repeat :Stock management flow;
-'backward:Stock not OK;
-'repeat while (stock amount) is (Not OK)
-
-
 
 @enduml
