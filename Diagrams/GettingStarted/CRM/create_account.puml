@@ -1,0 +1,56 @@
+@startuml
+<style>
+activityDiagram {
+  BackgroundColor #33668E
+  BorderColor #33668E
+  FontColor #fff
+  FontName arial
+
+  diamond {
+    BackgroundColor #ccf
+    LineColor #00FF00
+    FontColor green
+    FontName arial
+    FontSize 15
+  }
+  arrow {
+    FontColor #33668E
+    FontName arial
+    FontSize 15
+
+  }
+  partition {
+    LineColor red
+    FontColor green
+    RoundCorner 10
+    BackgroundColor PeachPuff
+  }
+  note {
+    FontColor Blue
+    LineColor Navy
+    BackgroundColor #ccf
+  }
+}
+document {
+   BackgroundColor transparent
+}
+</style>
+
+|User:Ana|
+start
+:Request to create a new user;
+
+|System|
+:Send the user creation form;
+
+|User:Ana|
+repeat :Fill the user creation form;
+repeat while (Form is valid?) is (Not)
+:Submit form;
+
+|System|
+:Process form data;
+:Save to DB;
+end
+
+@enduml
