@@ -1,6 +1,6 @@
 @startuml
 
-class Owner:User {
+class Ana:User {
     id = 1
     name = Ana
     email = ana@doceana.pt
@@ -16,12 +16,68 @@ class MasterAdmin:Role{
 
 class All:Permission{
     id = 1
-    name = All (dangerous)
+    name = all (dangerous)
     scope = ALL
     level = [ALL]
 }
 
-"Owner:User" - "MasterAdmin:Role"
+"Ana:User" - "MasterAdmin:Role"
 "MasterAdmin:Role" - "All:Permission"
 
+
+class Nelson:User{
+    id = 2
+    name = Nelson
+    email = nelson@doceana.pt
+    password = 123@Nelson
+    roles = [2, 3]
+}
+
+class SalesManager:Role{
+    id = 2
+    name = sales manager
+    permission = [2,3]
+}
+
+class SalesAll:Permission{
+    id = 2
+    name = sales all
+    scope = SALES
+    level = [ALL]
+}
+
+class HRManager:Role{
+    id = 3
+    name = sales manager
+    permission = [3, 4]
+}
+
+class HRAll:Permission{
+    id = 4
+    name = HR all
+    scope = HR
+    level = [ALL]
+}
+
+class SystemRead:Permission {
+    id = 3
+    name = whole system read
+    scope = SYSTEM
+    level = [READ]
+}
+
+'class SalesEmployee:Role{
+'    id =
+'    name = employee
+'    permissions = []
+'}
+
+'class HRManager:Role{
+'id = 3
+'name = HR manager
+'permission = []
+'}
+'
+'class All:Permission{
+'}
 @enduml
