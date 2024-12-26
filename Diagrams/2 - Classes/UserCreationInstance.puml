@@ -1,0 +1,27 @@
+@startuml
+
+class Owner:User {
+    id = 1
+    name = Ana
+    email = ana@doceana.pt
+    password = 123@Ana
+    roles = [1]
+}
+
+class MasterAdmin:Role{
+    id = 1
+    name = master admin
+    permissions = [1]
+}
+
+class All:Permission{
+    id = 1
+    name = All (dangerous)
+    scope = ALL
+    level = [ALL]
+}
+
+"Owner:User" - "MasterAdmin:Role"
+"MasterAdmin:Role" - "All:Permission"
+
+@enduml

@@ -55,19 +55,23 @@ Role "*" *-- "1.*" Permission : < has
 
 
 enum PermissionScope{
-    SYSTEM
-    USERS
-    SALES
-    CRM
-    INVENTORY
-    FINANCE
+    NONE = 0
+    ALL = 1
+    USERS = 2
+    SALES = 3
+    CRM = 4
+    INVENTORY = 5
+    FINANCE = 6
+    HR = 7
 }
 
 enum PermissionLevel{
-    CREATE
-    READ
-    UPDATE
-    DELETE
+    NONE = 0
+    ALL = 1
+    CREATE = 2
+    READ = 3
+    UPDATE = 4
+    DELETE = 5
 }
 
 @enduml
