@@ -2,11 +2,11 @@
 'https://plantuml.com/class-diagram
 
 class User{
-    - Integer id
-    - String name
-    - String email
-    - String password
-    - List<Role> | void roles
+    - id : Integer
+    - name : String
+    - email : String
+    - password : String
+    - roles : List<Role> | void
 
     - setId()
     + getId()
@@ -17,9 +17,9 @@ class User{
 }
 
 class Role {
-    - Integer id
-    - String name
-    - List<Permission> permissions
+    - id : Integer
+    - name : String
+    - permissions : List<Permission>
 
     - setId()
     + getId()
@@ -28,10 +28,10 @@ class Role {
 }
 
 class Permission{
-    - Integer id
-    - String name
-    - PermissionScope scope
-    - List<PermissionLevel> level
+    - id : Integer
+    - name : String
+    - scope : PermissionScope
+    - level : List<PermissionLevel>
 
     - setId()
     + getId()
