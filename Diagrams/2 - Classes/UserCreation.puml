@@ -40,25 +40,19 @@ class Permission{
     + level {set;get} ()
 }
 
-class Profile{
-
-}
-
-class Address
-
-
-class Notification
+'class Profile{
+'
+'}
+'
+'class Address
+'
+'
+'class Notification
 
 
 User "1"  o-- "*" Role : > has
 Role "*" *-- "1.*" Permission : < has
 
-
-enum Status {
-    DAYS
-    HOURS
-    MINUTES
-}
 
 enum PermissionScope{
     SYSTEM
