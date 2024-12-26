@@ -13,21 +13,23 @@
         BackgroundColor Transparent
     }
 </style>
+
 |User|
-|System|
 start
-:Send List of available modules;
-
-|User|
-:Read the list of available modules;
-:Select the desired modules;
-
+:Request product availability;
 |System|
-:Save on Data Base;
-:Install Dependencies;
-
-|User|
-:Go to dashboard admin;
+if (Is Product available?) is (yes) then
+    if (Is amount enough?) is (yes) then
+      :Update amount;
+      :Save on data base;
+      |User|
+      :Notify success;
+      end
+      break
+      endif
+->
+endif
+:Notify Product amount;
 end
 
 @enduml
