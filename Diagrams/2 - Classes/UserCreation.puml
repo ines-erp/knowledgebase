@@ -6,34 +6,74 @@ class User{
     - String name
     - String email
     - String password
-    - List<Role> | void role
+    - List<Role> | void roles
+
     - setId()
     + getId()
-    + Name {set;get} ()
+    + name {set;get} ()
     + email {set;get} ()
     + password {set;get} ()
-    + role  {set;get} ()
+    + roles  {set;get} ()
+}
+
+class Role {
+    - Integer id
+    - String name
+    - List<Permission> permissions
+
+    - setId()
+    + getId()
+    + name {set;get} ()
+    + permissions {set;get} ()
+}
+
+class Permission{
+    - Integer id
+    - String name
+    - PermissionScope scope
+    - List<PermissionLevel> level
+
+    - setId()
+    + getId()
+    + name {set;get} ()
+    + scope {set;get} ()
+    + level {set;get} ()
 }
 
 class Profile{
 
 }
+
 class Address
 
-class Role
-class Permission
+
 class Notification
 
 
-
-
-Collection <|-- AbstractCollection
+User "1"  o-- "*" Role : > has
+Role "*" *-- "1.*" Permission : < has
 
 
 enum Status {
-DAYS
-HOURS
-MINUTES
+    DAYS
+    HOURS
+    MINUTES
+}
+
+enum PermissionScope{
+    SYSTEM
+    USERS
+    SALES
+    CRM
+    INVENTORY
+    FINANCE
+}
+
+enum PermissionLevel{
+    CREATE
+    READ
+    UPDATE
+    DELETE
 }
 
 @enduml
