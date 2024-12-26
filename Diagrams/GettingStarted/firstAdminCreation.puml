@@ -14,7 +14,7 @@ activityDiagram {
     FontSize 15
   }
   arrow {
-    FontColor gold
+    FontColor #33668E
     FontName arial
     FontSize 15
 

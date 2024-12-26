@@ -1,0 +1,63 @@
+@startuml
+<style>
+activityDiagram {
+  BackgroundColor #33668E
+  FontColor #fff
+}
+
+arrow {
+FontColor #33668E
+FontName arial
+FontSize 15
+
+}
+
+
+document {
+    BackgroundColor Transparent
+}
+</style>
+
+|Client|
+start
+:Do an order;
+
+|User|
+if (Has account?) is (No) then
+:CRM - Account creation;
+endif
+
+:Create order FORM;
+
+|System|
+:Create order;
+
+if (Stock sufficient amount?) is (No) then
+  :Notify;
+endif
+
+fork
+:Cancel;
+end
+
+fork again
+:Trigger schedule an order flow;
+end
+
+fork again
+:Create order;
+end merge
+
+:Save to DB;
+
+|User|
+:Prepare order;
+
+|Client|
+:Trigger the Payment flow;
+:Receive order;
+:CRM - Post sales;
+
+end
+
+@enduml
