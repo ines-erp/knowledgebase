@@ -23,68 +23,44 @@ class Nelson:User{
 
 'ROLES
 
-
-
 class MasterAdmin:Role{
     id = 1
     name = master admin
-    permissions = [1]
+    scope = SYSTEM
+    permissions = [ALL]
 }
 
 class "SalesManager:Role"{
     id = 2
     name = sales manager
-    permission = [3, 4]
+    scope = SALES
+    permission = [READ, UPDATE]
 }
 
 
 class HRManager:Role{
     id = 3
-    name = sales manager
-    permission = [3, 4]
+    name = human resource manager
+    scope = HR
+    permission = [READ, UPDATE]
+}
+
+class SystemRead:Role {
+    id = 4
+    name = system read
+    scope = SYSTEM
+    permission = [READ]
 }
 
 'END ROLES
 
-
-'PERMISSIONS
-
-class All:Permission{
-    id = 1
-    name = all dangerous
-    scope = ALL
-    level = [ALL]
-}
-
-class SalesAll:Permission{
-    id = 2
-    name = sales all
-    scope = SALES
-    level = [ALL]
-}
-
-
-class HRAll:Permission{
-    id = 4
-    name = HR all
-    scope = HR
-    level = [ALL]
-}
-
-'END PERMISSIONS
-
-
 'RELATIONS
 
 "Ana:User" -DOWN- "MasterAdmin:Role"
-"MasterAdmin:Role" -DOWN- "All:Permission"
 
 "Nelson:User" -DOWN- "HRManager:Role"
-"HRManager:Role" -DOWN- "HRAll:Permission"
-
 "Nelson:User" -DOWN- "SalesManager:Role"
-"SalesManager:Role" -DOWN- "SalesAll:Permission"
-
+"Nelson:User" -DOWN- "SystemRead:Role"
 
 
 'END RELATIONS

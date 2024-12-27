@@ -19,39 +19,33 @@ class User{
 class Role {
     - id : Integer
     - name : String
-    - permissions : List<Permission>
+    - scope: PermissionScope
+    - permissions : List<PermissionLevel>
 
     - setId()
+    - setScope ()
     + getId()
     + name {set;get} ()
+    + getScope ()
     + permissions {set;get} ()
 }
 
-class Permission{
-    - id : Integer
-    - name : String
-    - scope : PermissionScope
-    - level : List<PermissionLevel>
-
-    - setId()
-    + getId()
-    + name {set;get} ()
-    + scope {set;get} ()
-    + level {set;get} ()
-}
-
-'class Profile{
+'class Permission{
+'    - id : Integer
+'    - name : String
+''    - scope : PermissionScope
+'    - level : List<PermissionLevel>
 '
+'    - setId()
+'    + getId()
+'    + name {set;get} ()
+''    + scope {set;get} ()
+'    + level {set;get} ()
 '}
-'
-'class Address
-'
-'
-'class Notification
 
 
 User "1"  o-- "*" Role : > has
-Role "*" *-- "1.*" Permission : < has
+'Role "*" *-- "1.*" Permission : < has
 
 
 enum PermissionScope{
