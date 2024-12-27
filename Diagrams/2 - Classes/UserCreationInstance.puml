@@ -1,5 +1,7 @@
 @startuml
 
+'USERS
+
 class Ana:User {
     id = 1
     name = Ana
@@ -8,35 +10,50 @@ class Ana:User {
     roles = [1]
 }
 
+class Nelson:User{
+    id = 2
+    name = Nelson
+    email = nelson@doceana.pt
+    password = 123@Nelson
+    roles = [2, 3, 4]
+}
+
+
+'END USERS
+
+'ROLES
+
+
+
 class MasterAdmin:Role{
     id = 1
     name = master admin
     permissions = [1]
 }
 
-class All:Permission{
-    id = 1
-    name = all (dangerous)
-    scope = ALL
-    level = [ALL]
-}
-
-"Ana:User" - "MasterAdmin:Role"
-"MasterAdmin:Role" - "All:Permission"
-
-
-class Nelson:User{
-    id = 2
-    name = Nelson
-    email = nelson@doceana.pt
-    password = 123@Nelson
-    roles = [2, 3]
-}
-
-class SalesManager:Role{
+class "SalesManager:Role"{
     id = 2
     name = sales manager
-    permission = [2,3]
+    permission = [3, 4]
+}
+
+
+class HRManager:Role{
+    id = 3
+    name = sales manager
+    permission = [3, 4]
+}
+
+'END ROLES
+
+
+'PERMISSIONS
+
+class All:Permission{
+    id = 1
+    name = all dangerous
+    scope = ALL
+    level = [ALL]
 }
 
 class SalesAll:Permission{
@@ -46,11 +63,6 @@ class SalesAll:Permission{
     level = [ALL]
 }
 
-class HRManager:Role{
-    id = 3
-    name = sales manager
-    permission = [3, 4]
-}
 
 class HRAll:Permission{
     id = 4
@@ -59,25 +71,22 @@ class HRAll:Permission{
     level = [ALL]
 }
 
-class SystemRead:Permission {
-    id = 3
-    name = whole system read
-    scope = SYSTEM
-    level = [READ]
-}
+'END PERMISSIONS
 
-'class SalesEmployee:Role{
-'    id =
-'    name = employee
-'    permissions = []
-'}
 
-'class HRManager:Role{
-'id = 3
-'name = HR manager
-'permission = []
-'}
-'
-'class All:Permission{
-'}
+'RELATIONS
+
+"Ana:User" -DOWN- "MasterAdmin:Role"
+"MasterAdmin:Role" -DOWN- "All:Permission"
+
+"Nelson:User" -DOWN- "HRManager:Role"
+"HRManager:Role" -DOWN- "HRAll:Permission"
+
+"Nelson:User" -DOWN- "SalesManager:Role"
+"SalesManager:Role" -DOWN- "SalesAll:Permission"
+
+
+
+'END RELATIONS
+
 @enduml
