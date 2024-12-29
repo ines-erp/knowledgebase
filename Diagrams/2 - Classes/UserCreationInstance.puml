@@ -1,0 +1,68 @@
+@startuml
+
+'USERS
+
+class Ana:User {
+    id = 1
+    name = Ana
+    email = ana@doceana.pt
+    password = 123@Ana
+    roles = [1]
+}
+
+class Nelson:User{
+    id = 2
+    name = Nelson
+    email = nelson@doceana.pt
+    password = 123@Nelson
+    roles = [2, 3, 4]
+}
+
+
+'END USERS
+
+'ROLES
+
+class MasterAdmin:Role{
+    id = 1
+    name = master admin
+    scope = SYSTEM
+    permissions = [ALL]
+}
+
+class "SalesManager:Role"{
+    id = 2
+    name = sales manager
+    scope = SALES
+    permission = [READ, UPDATE]
+}
+
+
+class HRManager:Role{
+    id = 3
+    name = human resource manager
+    scope = HR
+    permission = [READ, UPDATE]
+}
+
+class SystemRead:Role {
+    id = 4
+    name = system read
+    scope = SYSTEM
+    permission = [READ]
+}
+
+'END ROLES
+
+'RELATIONS
+
+"Ana:User" -DOWN- "MasterAdmin:Role"
+
+"Nelson:User" -DOWN- "HRManager:Role"
+"Nelson:User" -DOWN- "SalesManager:Role"
+"Nelson:User" -DOWN- "SystemRead:Role"
+
+
+'END RELATIONS
+
+@enduml
