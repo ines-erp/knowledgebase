@@ -1,0 +1,71 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class User{
+    - id : Integer
+    - name : String
+    - email : String
+    - password : String
+    - roles : List<Role> | void
+
+    - setId()
+    + getId()
+    + name {set;get} ()
+    + email {set;get} ()
+    + password {set;get} ()
+    + roles  {set;get} ()
+}
+
+class Role {
+    - id : Integer
+    - name : String
+    - scope: PermissionScope
+    - permissions : List<PermissionLevel>
+
+    - setId()
+    - setScope ()
+    + getId()
+    + name {set;get} ()
+    + getScope ()
+    + permissions {set;get} ()
+}
+
+'class Permission{
+'    - id : Integer
+'    - name : String
+''    - scope : PermissionScope
+'    - level : List<PermissionLevel>
+'
+'    - setId()
+'    + getId()
+'    + name {set;get} ()
+''    + scope {set;get} ()
+'    + level {set;get} ()
+'}
+
+
+User "1"  o-- "*" Role : > has
+'Role "*" *-- "1.*" Permission : < has
+
+
+enum PermissionScope{
+    NONE = 0
+    ALL = 1
+    USERS = 2
+    SALES = 3
+    CRM = 4
+    INVENTORY = 5
+    FINANCE = 6
+    HR = 7
+}
+
+enum PermissionLevel{
+    NONE = 0
+    ALL = 1
+    CREATE = 2
+    READ = 3
+    UPDATE = 4
+    DELETE = 5
+}
+
+@enduml
