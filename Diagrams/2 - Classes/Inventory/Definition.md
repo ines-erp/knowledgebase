@@ -1,4 +1,4 @@
-## InventoryItem
+## InventoryItem (Must)
 Is the base class that will be extended into ServiceItem and ProductItem
 
 ### Attributes:
@@ -12,7 +12,7 @@ Is the base class that will be extended into ServiceItem and ProductItem
 - price
 - isActive (Boolean to indicate if the item is active)
 
-## ProductItem
+## ProductItem (Must)
 Extends the class InventoryItem
 
 ### Attributes
@@ -26,7 +26,7 @@ Extends the class InventoryItem
 - checkLowStock()
 - checkOverstock()
 
-## ServiceItem
+## ServiceItem (Must)
 Extends the class InventoryItem
 
 ### Attributes
@@ -34,7 +34,7 @@ Extends the class InventoryItem
 - resourcesRequired (List of resources needed, e.g., tools, staff)
 - consumablesRequired (List of consumables that are items used during service delivery (e.g., cleaning supplies, spare parts).)
 
-## Resource
+## Resource (should)
    Definition: Resources are the tools, equipment, or staff required to deliver a service.
 
 ### Attributes:
@@ -44,7 +44,7 @@ Extends the class InventoryItem
 - availability (e.g., "Available," "In Use")
 - cost (Cost associated with the resource, e.g., hourly wage or rental fee)
 
-## Consumable
+## Consumable (should)
 Definition: Consumables are items used during service delivery (e.g., cleaning supplies, spare parts).
 
 ### Attributes:
@@ -54,7 +54,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - stockLevel (Quantity in stock)
 - cost (Cost per unit)
 
-## Category
+## Category (should)
 ### Attributes:
 - categoryId (Unique identifier)
 - name
@@ -64,7 +64,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - addItem(itemId)
 - removeItem(itemId)
 
-## Group (Product Bundles/Kits or Service Bundles)
+## Group (Product Bundles/Kits or Service Bundles) (could)
 ### Attributes:
 - groupId (Unique identifier)
 - name
@@ -75,7 +75,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - addItem(itemId)
 - removeItem(itemId)
 
-## Warehouse
+## Warehouse (could)
 ### Attributes:
 - warehouseId (Unique identifier)
 - name
@@ -87,7 +87,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - getStockLevel(itemId)
 - transferStock(itemId, quantity, destinationWarehouseId)
 
-## StockTransaction
+## StockTransaction (could)
 ### Attributes:
 - transactionId (Unique identifier)
 - itemId (Foreign key to ProductItem)
@@ -101,7 +101,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 ### Methods:
 - logTransaction()
 
-## Supplier
+## Supplier (could)
 ### Attributes:
 - supplierId (Unique identifier)
 - name
@@ -113,7 +113,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - addPurchaseOrder(orderId)
 - updatePerformanceRating(rating)
 
-## PurchaseOrder
+## PurchaseOrder (should)
 ### Attributes:
 - purchaseOrderId (Unique identifier)
 - supplierId (Foreign key to Supplier)
@@ -126,7 +126,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - receiveStock()
 - cancelOrder()
 
-## Report
+## Report (could)
 ### Attributes:
 - reportId (Unique identifier)
 - reportType (e.g., "Stock Movement", "Aging Analysis", "Inventory Valuation", "Services done")
