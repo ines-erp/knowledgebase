@@ -7,18 +7,24 @@ Is the base class that will be extended into Service and Product
   - Is a unique identifier to specific product based on their attributes, they are alphanumeric and human-readable, eg: "TSHIRT-BLUE-L"
 - name
 - description
-- categoryId (Foreign key to Category)
+- categoryId (Foreign key to CategoryItem)
 - cost
 - price
+  - This by default could be 0, for items that are not for sale be are part of the inventory of the client
 - isActive (Boolean to indicate if the item is active)
+- isForSale (Boolean to indicate if the item is for Sale)
 
 ## Product (Must)
 Extends the class Item
 
 ### Attributes
+- type
+  - the type indicates if the product is a consumable, is a resource or is a sale product
 - stockLevel
+  - the current level for that product
 - minimumStockLevel
-- maximumStockLevel
+  - minimum stock allowed, if that number is reached the system will trigger some behaviours.
+- maximumStockLevel (opposite of minimum, same behaviour)
 - batchNumber (Optional, for batch tracking)
 - expiryDate (Optional, for perishable items)
 ### Methods:
@@ -31,30 +37,10 @@ Extends the class Item
 
 ### Attributes
 - duration
-- resourcesRequired (List of resources needed, e.g., tools, staff)
-- consumablesRequired (List of consumables that are items used during service delivery (e.g., cleaning supplies, spare parts).)
+- productRequired (List of products needed, could be from type resources or consumables, e.g., tools, staff, cleaning supplies, spare parts))
 
-## Resource (should)
-   Definition: Resources are the tools, equipment, or staff required to deliver a service.
-
-### Attributes:
-- resourceId (Unique identifier)
-- name (e.g., "Technician," "Diagnostic Tool")
-- type (e.g., "Human," "Equipment")
-- availability (e.g., "Available," "In Use")
-- cost (Cost associated with the resource, e.g., hourly wage or rental fee)
-
-## Consumable (should)
-Definition: Consumables are items used during service delivery (e.g., cleaning supplies, spare parts).
-
-### Attributes:
-- consumableId (Unique identifier)
-- name (e.g., "Air Filter")
-- description (e.g., "Replacement air filter for HVAC systems")
-- stockLevel (Quantity in stock)
-- cost (Cost per unit)
-
-## Category (should)
+## ItemCategory (should)
+This will be extended from the main class Category
 ### Attributes:
 - categoryId (Unique identifier)
 - name
@@ -64,16 +50,6 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - addItem(itemId)
 - removeItem(itemId)
 
-## Group (Product Bundles/Kits or Service Bundles) (could)
-### Attributes:
-- groupId (Unique identifier)
-- name
-- description
-- items (List of item objects or IDs)
-
-### Methods:
-- addItem(itemId)
-- removeItem(itemId)
 
 ## Warehouse (could)
 ### Attributes:
@@ -88,10 +64,11 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - transferStock(itemId, quantity, destinationWarehouseId)
 
 ## StockTransaction (could)
+This must implement the main class Transaction
 ### Attributes:
 - transactionId (Unique identifier)
 - itemId (Foreign key to Product)
-- warehouseId (Foreign key to Warehouse)
+- responsibleParty (e.g: Foreign key to Warehouse)
 - transactionType (e.g., "Purchase", "Sale", "Transfer", "Adjustment")
 - quantity
 - transactionDate
@@ -102,6 +79,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 - logTransaction()
 
 ## Report (could)
+This also mus implement the default report class
 ### Attributes:
 - reportId (Unique identifier)
 - reportType (e.g., "Stock Movement", "Aging Analysis", "Inventory Valuation", "Services done")
