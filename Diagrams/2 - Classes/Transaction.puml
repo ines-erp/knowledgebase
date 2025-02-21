@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Transaction {
+  + transactionId: String
+  + itemId: String
+  + transactionType: String
+  + quantity: Int
+  + transactionDate: Date
+  + relatedOrderId: String
+  + responsibleParty: String
+  + notes: String
+  + logTransaction(): void
+}
+
+note top of Transaction
+    This could be implemented on Finance module,
+    Items management modules, and other modules that use some
+    type of transactions
+end note
+
+note right of Transaction::responsibleParty
+    Could be an warehouse,
+    or a user from HR,
+    depends on the implementation?
+end note
+@enduml

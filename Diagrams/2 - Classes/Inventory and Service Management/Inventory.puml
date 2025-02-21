@@ -1,60 +1,43 @@
 @startuml
 
 ' Define classes
-class Item {
+abstract class Item {
   + itemId: String
   + sku: String
   + name: String
   + description: String
   + categoryId: String
   + cost: Double
+  + price: Double = 0
   + isActive: Boolean
+  + isForSale: Boolean
 }
 
-class Product {
-  + price: Double
+note right of Item::price
+    Products that are not for sale could
+    have stay with the default price as 0
+end note
+
+class Product extends Item{
   + stockLevel: Int
   + minimumStockLevel: Int
   + maximumStockLevel: Int
-  + batchNumber: String
-  + expiryDate: Date
+  + batchNumber: String | None
+  + expiryDate: Date | None
+  + type: String
   + updateStockLevel(quantity: Int): void
   + checkLowStock(): Boolean
   + checkOverstock(): Boolean
 }
 
-class Service{
-  + price: Double
+note right of Product::type
+    Resource, consumable, sale, etc.
+end note
+
+
+class Service extends Item{
   + duration: Int
-  + resourcesRequired: List<Resource>
-  + consumablesRequired: List<Consumable>
-}
-
-class Category {
-  + categoryId: String
-  + name: String
-  + description: String
-  + addItem(itemId: String): void
-  + removeItem(itemId: String): void
-}
-
-class Resource{
-  + type: String
-  + availability: String
-  + stockLevel: Int
-}
-
-class Consumable{
-  + stockLevel: Int
-}
-
-class Group {
-  + groupId: String
-  + name: String
-  + description: String
-  + items: List<InventoryItem>
-  + addItem(itemId: String): void
-  + removeItem(itemId: String): void
+  + productRequired: List<Product>
 }
 
 class Warehouse {
@@ -67,47 +50,11 @@ class Warehouse {
   + transferStock(itemId: String, quantity: Int, destinationWarehouseId: String): void
 }
 
-class StockTransaction {
-  + transactionId: String
-  + itemId: String
-  + warehouseId: String
-  + transactionType: String
-  + quantity: Int
-  + transactionDate: Date
-  + relatedOrderId: String
-  + notes: String
-  + logTransaction(): void
-}
+class StockTransaction{}
+note top of StockTransaction : Extends common Abstract class Transaction.
 
-class Report {
-  + reportId: String
-  + reportType: String
-  + generatedDate: Date
-  + parameters: Map<String, String>
-  + generateReport(): void
-  + exportReport(format: String): void
-}
+class ItemCategory{}
+note top of ItemCategory: Extends common Abstract class Category.
 
-'' Define relationships
-'Item <|-- Product : extends <
-'Item <|-- Service : extends <
-'Item <|-- Resource : extends <
-'Item <|-- Consumable : extends <
-'
-'Item "1" --> "1" Category : belongs to >
-'Item "1" --> "0..*" Group : part of >
-'Service "1" --> "0..*" Resource : requires >
-'Service "1" --> "0..*" Consumable : requires >
-'
-'Warehouse "1..*" --> "0..*" Product : has >
-'Warehouse "1..*" --> "0..*" Consumable : has >
-'Warehouse "1..*" --> "0..*" Resource : has >
-'
-'' StockTransaction can reference any Inventory Item
-'StockTransaction "1" --> "1" Warehouse : occurs in >
-'StockTransaction "1" --> "1" Item : tracks >
-'
-'Report "1" --> "0..*" Item : based on >
-'Report "1" --> "0..*" StockTransaction : based on >
 
 @enduml
