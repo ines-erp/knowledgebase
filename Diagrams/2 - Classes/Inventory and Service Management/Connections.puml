@@ -1,0 +1,47 @@
+@startuml
+
+' Define classes
+class Item {}
+
+class Product {}
+
+class Service {}
+
+class Category {}
+
+class Resource {}
+
+class Consumable {}
+
+class Group {}
+
+class Warehouse {}
+
+class StockTransaction {}
+
+class Report {}
+
+' Define relationships
+Item <|-- Product : extends <
+Item <|-- Service : extends <
+Item <|-- Resource : extends <
+Item <|-- Consumable : extends <
+
+Item "1" --> "1" Category : belongs to >
+Item "1" --> "0..*" Group : part of >
+Service "1" --> "0..*" Resource : requires >
+Service "1" --> "0..*" Consumable : requires >
+
+Warehouse "1..*" --> "0..*" Product : has >
+Warehouse "1..*" --> "0..*" Consumable : has >
+Warehouse "1..*" --> "0..*" Resource : has >
+
+' StockTransaction can reference any Inventory Item
+StockTransaction "1" --> "1" Warehouse : occurs in >
+StockTransaction "1" --> "1" Item : tracks >
+
+Report "1" --> "0..*" Item : based on >
+Report "1" --> "0..*" StockTransaction : based on >
+
+
+@enduml

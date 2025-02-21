@@ -1,18 +1,18 @@
 @startuml
 
 ' Define classes
-class InventoryItem {
+class Item {
   + itemId: String
   + sku: String
   + name: String
   + description: String
   + categoryId: String
   + cost: Double
-  + price: Double
   + isActive: Boolean
 }
 
-class ProductItem {
+class Product {
+  + price: Double
   + stockLevel: Int
   + minimumStockLevel: Int
   + maximumStockLevel: Int
@@ -23,7 +23,8 @@ class ProductItem {
   + checkOverstock(): Boolean
 }
 
-class ServiceItem {
+class Service{
+  + price: Double
   + duration: Int
   + resourcesRequired: List<Resource>
   + consumablesRequired: List<Consumable>
@@ -37,20 +38,14 @@ class Category {
   + removeItem(itemId: String): void
 }
 
-class Resource {
-  + resourceId: String
-  + name: String
+class Resource{
   + type: String
   + availability: String
-  + cost: Double
+  + stockLevel: Int
 }
 
-class Consumable {
-  + consumableId: String
-  + name: String
-  + description: String
+class Consumable{
   + stockLevel: Int
-  + cost: Double
 }
 
 class Group {
@@ -84,27 +79,6 @@ class StockTransaction {
   + logTransaction(): void
 }
 
-class Supplier {
-  + supplierId: String
-  + name: String
-  + contactInfo: String
-  + leadTime: Int
-  + performanceRating: Double
-  + addPurchaseOrder(orderId: String): void
-  + updatePerformanceRating(rating: Double): void
-}
-
-class PurchaseOrder {
-  + purchaseOrderId: String
-  + supplierId: String
-  + items: List<InventoryItem>
-  + orderDate: Date
-  + expectedDeliveryDate: Date
-  + status: String
-  + receiveStock(): void
-  + cancelOrder(): void
-}
-
 class Report {
   + reportId: String
   + reportType: String
@@ -114,20 +88,26 @@ class Report {
   + exportReport(format: String): void
 }
 
-' Define relationships
-InventoryItem <|-- ProductItem
-InventoryItem <|-- ServiceItem
-
-InventoryItem "1" --> "1" Category : belongs to >
-InventoryItem "1" --> "0..*" Group : part of >
-StockTransaction "1" --> "1" ProductItem : tracks >
-StockTransaction "1" --> "1" Warehouse : occurs in >
-PurchaseOrder "1" --> "1" Supplier : placed by >
-PurchaseOrder "1" --> "1..*" InventoryItem : includes >
-ServiceItem "1" --> "0..*" Resource : requires >
-ServiceItem "1" --> "0..*" Consumable : requires >
-Report "1" --> "0..*" InventoryItem : based on >
-Report "1" --> "0..*" StockTransaction : based on >
-Report "1" --> "0..*" PurchaseOrder : based on >
+'' Define relationships
+'Item <|-- Product : extends <
+'Item <|-- Service : extends <
+'Item <|-- Resource : extends <
+'Item <|-- Consumable : extends <
+'
+'Item "1" --> "1" Category : belongs to >
+'Item "1" --> "0..*" Group : part of >
+'Service "1" --> "0..*" Resource : requires >
+'Service "1" --> "0..*" Consumable : requires >
+'
+'Warehouse "1..*" --> "0..*" Product : has >
+'Warehouse "1..*" --> "0..*" Consumable : has >
+'Warehouse "1..*" --> "0..*" Resource : has >
+'
+'' StockTransaction can reference any Inventory Item
+'StockTransaction "1" --> "1" Warehouse : occurs in >
+'StockTransaction "1" --> "1" Item : tracks >
+'
+'Report "1" --> "0..*" Item : based on >
+'Report "1" --> "0..*" StockTransaction : based on >
 
 @enduml

@@ -11,7 +11,7 @@ ___
 - [Core](Concept.md)
 - [People Management](People-Management.md)
 - [Finance Management](Finance-Management.md)
-- [Inventory Management](Inventory-Management.md)
+- [Inventory Management](Inventory-Service-Management)
 - [Sales/Services Management](Sales-Services-Management.md)
 - [Customer Management CRM](Customer-Management-CRM.md)
 - [Purchasing Management](Purchasing-Management.md)

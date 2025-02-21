@@ -6,5 +6,6 @@
                  name="05 - API snippets"
                  start-page="api-snippets.md">
 
+    <toc-element topic="Standards.md"/>
     <toc-element topic="api-snippets.md"/>
 </instance-profile>

@@ -1,5 +1,5 @@
-## InventoryItem (Must)
-Is the base class that will be extended into ServiceItem and ProductItem
+## Item (Must)
+Is the base class that will be extended into Service and Product
 
 ### Attributes:
 - itemId (Unique identifier)
@@ -12,8 +12,8 @@ Is the base class that will be extended into ServiceItem and ProductItem
 - price
 - isActive (Boolean to indicate if the item is active)
 
-## ProductItem (Must)
-Extends the class InventoryItem
+## Product (Must)
+Extends the class Item
 
 ### Attributes
 - stockLevel
@@ -26,8 +26,8 @@ Extends the class InventoryItem
 - checkLowStock()
 - checkOverstock()
 
-## ServiceItem (Must)
-Extends the class InventoryItem
+## Service (Must)
+Extends the class Item
 
 ### Attributes
 - duration
@@ -90,7 +90,7 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 ## StockTransaction (could)
 ### Attributes:
 - transactionId (Unique identifier)
-- itemId (Foreign key to ProductItem)
+- itemId (Foreign key to Product)
 - warehouseId (Foreign key to Warehouse)
 - transactionType (e.g., "Purchase", "Sale", "Transfer", "Adjustment")
 - quantity
@@ -100,31 +100,6 @@ Definition: Consumables are items used during service delivery (e.g., cleaning s
 
 ### Methods:
 - logTransaction()
-
-## Supplier (could)
-### Attributes:
-- supplierId (Unique identifier)
-- name
-- contactInfo
-- leadTime (Time taken to deliver goods)
-- performanceRating (Optional, for tracking supplier performance)
-
-### Methods:
-- addPurchaseOrder(orderId)
-- updatePerformanceRating(rating)
-
-## PurchaseOrder (should)
-### Attributes:
-- purchaseOrderId (Unique identifier)
-- supplierId (Foreign key to Supplier)
-- items (List of items with quantities)
-- orderDate
-- expectedDeliveryDate
-- status (e.g., "Pending", "Received", "Cancelled")
-
-### Methods:
-- receiveStock()
-- cancelOrder()
 
 ## Report (could)
 ### Attributes:

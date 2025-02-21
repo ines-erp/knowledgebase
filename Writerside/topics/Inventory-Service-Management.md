@@ -1,6 +1,6 @@
-# Inventory Management
+# Inventory and Service Management
 
-#modules/inventory
+#modules/inventory_service
 ## Description
 This module is responsible to manage all inventory, things like equipment, asset, consumable. All should be registered and tracked here.
 
