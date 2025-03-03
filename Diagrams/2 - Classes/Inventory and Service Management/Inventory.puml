@@ -10,12 +10,11 @@ abstract class Item {
   + cost: Double
   + price: Double = 0
   + isActive: Boolean
-  + isForSale: Boolean
 }
 
 note right of Item::price
-    Products that are not for sale could
-    have stay with the default price as 0
+    Products that are not for
+    sale have the price as -1
 end note
 
 class Product extends Item{
@@ -24,7 +23,7 @@ class Product extends Item{
   + maximumStockLevel: Int
   + batchNumber: String | None
   + expiryDate: Date | None
-  + type: String
+  + type: WIP
   + updateStockLevel(quantity: Int): void
   + checkLowStock(): Boolean
   + checkOverstock(): Boolean

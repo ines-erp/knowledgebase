@@ -10,9 +10,8 @@ Is the base class that will be extended into Service and Product
 - categoryId (Foreign key to CategoryItem)
 - cost
 - price
-  - This by default could be 0, for items that are not for sale be are part of the inventory of the client
+  - This by default could be 0, for items that are not for sale has the value as -1 and items with 0 could be gifts and such
 - isActive (Boolean to indicate if the item is active)
-- isForSale (Boolean to indicate if the item is for Sale)
 
 ## Product (Must)
 Extends the class Item
